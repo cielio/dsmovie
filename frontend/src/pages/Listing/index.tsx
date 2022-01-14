@@ -22,10 +22,9 @@ function Listing() {
     numberOfElements: 0,
     empty: true
   });
-
   // Hook: useEffect Executar algo na instanciação ou destruição do componente, observar estado
   useEffect(() => {
-    axios.get(`${BASE_URL}/movies?size12&page=${pageNumber}`)
+    axios.get(`${BASE_URL}/movies?size8&page=${pageNumber}&sort=id`)
     .then(response => {
       const data = response.data as MoviePage;
       setPage(data)
