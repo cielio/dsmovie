@@ -5,7 +5,7 @@ function Navbar() {
     <header>
       <nav className="container">
         <div className="dsmovie-nav-content">
-          <h1>Avalie seu filme favorioto</h1>
+          <h1>Avalie seu filme favorito!</h1>
           <a href="https://github.com/cielio" target="_blank" rel="noreferrer">
             <div className="dsmovie-contact-container">
               <GithubIcon />

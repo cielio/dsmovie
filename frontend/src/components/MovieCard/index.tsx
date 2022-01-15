@@ -10,9 +10,9 @@ type Props = {
 function MovieCard({ movie }: Props) {
     return (
 
-        <div>
-            <img className="dsmovie-movie-card-image" src={movie.image} alt={movie.title} />
-            <div className="dsmovie-card-bottom-container">
+        <div className="shadow rounded">
+            <img className="dsmovie-movie-card-image rounded-top" src={movie.image} alt={movie.title} />
+            <div className="dsmovie-card-bottom-container rounded-bottom">
                 <h3>{movie.title}</h3>
                 <MovieScore count={movie.count} score={movie.score} />
 
